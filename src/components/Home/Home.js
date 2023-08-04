@@ -4,7 +4,8 @@ import img from './img/undraw_Sign_up_n6im(2).png'
 import './home.css'
 import { Link } from 'react-router-dom'
 import { useState , useEffect } from 'react';
-import { auth } from '../../Firebase';
+import { auth,db } from '../../Firebase';
+import { addDoc, collection } from 'firebase/firestore';
 // import { Firestore, addDoc ,collection } from 'firebase/firestore';
 function Home() {
   // const [user,setUser]=useState([])
@@ -31,6 +32,20 @@ function Home() {
      })
   },[])
 
+  const checkaa = async () => {
+    const usersCollection = collection(db, 'users');
+  
+    try {
+      const res = await addDoc(usersCollection, {
+        name: "zoyaa",
+        code: 123,
+        city: "karachi"
+      });
+      console.log(res);
+    } catch (error) {
+      console.error("Error adding document: ", error);
+    }
+  }
   return (
     <div>
       <div className='nav'>
@@ -44,7 +59,7 @@ function Home() {
       
        <br/>
        <br/>
- 
+ <button onClick={checkaa}>click</button>
 
     </div>
    
