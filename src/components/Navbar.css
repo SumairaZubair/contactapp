@@ -1,0 +1,367 @@
+.app{
+
+    width: 370px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: auto;
+    /* background-color: rgb(103, 144, 206); */
+}
+.big{
+    /* background-color: rgb(180, 220, 248); */
+}
+.nav2{
+    width: 310px;
+    height: 60px;
+    background-color: rgb(89, 154, 244);
+    margin: auto;
+   padding: 8px;
+    margin-top: 10px;
+    border-radius: 20px;
+    gap: 7px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav2 h1{
+    /* width: 100px; */
+    color: white;
+    /* padding: 10px; */
+    /* font-size: 35px; */
+}
+.nav2 img{
+    width: 35px;
+    height: 40px;
+
+}
+.input{
+    height: 40px;
+    width: 400px;
+    padding: 20px;
+    padding-left: 60px;
+    margin: 10px;
+    margin-left: 10%;
+    background-color: aquamarine;
+    /* background-color: 2px solid rgb(75, 85, 229); */
+    /* background-color:  rgb(75, 85, 229); */
+    border-radius: 20px;
+    font-size: 22px;
+    /* display: flex; */
+    /* flex-grow: 20px; */
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+.input-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 0px;
+    position: relative;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .icon {
+    color: rgb(238, 238, 245);
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .input {
+    height: 40px;
+   /* max-width: 100%; */
+    width: 310px;
+    margin: auto;
+    /* margin-bottom: 20px; */
+    padding: 28px 28px 20px 40px; 
+    /* padding-left: 80px; */
+    background-color: rgb(89, 154, 244);
+    border-radius: 20px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    /* margin-right: 10px; */
+  }
+  
+  .plus {
+    color: rgb(89, 154, 244);
+    /* font-size: 6.7rem; */
+    /* margin-right: 20%; */
+    /* margin-left: 50px; */
+    /* margin-left: 80%; */
+    /* margin-right: 5%; */
+    transform: scale(2.8);
+    /* padding-left: 80%; */
+    /* margin-left: 60%; */
+
+  }
+.text{
+   
+    color: rgb(233, 231, 231);
+   padding-bottom: 30px;
+   text-align: start;
+}
+.main-contact{
+    /* height: 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.main{
+    width: 285px;
+    height: 80px;
+    margin-top: 8px;
+    margin-left: 13%;
+    background-color: rgb(89, 154, 244);
+  display: flex;
+  justify-content: space-around;
+  /* padding: 5px; */
+  border-radius: 20px;
+  /* padding-top: 40px; */
+}
+.user{
+    padding-top: 20px;
+    color: rgb(252, 252, 254);
+    font-size: 55px;
+}
+.contact-info{
+    display: flex;
+    gap: 6px;
+   
+}
+.contact-icon{
+    display: flex;
+    font-size: 26px;
+    padding-top: 20px;
+}
+
+.trash{
+    font-size: 35px;
+    color: rgb(250, 251, 252);
+    /* gap: 5px; */
+}
+.model{
+    /* margin-top: 20px; */
+    margin-top: 20px;
+/* margin: auto; */
+margin-left: 36%;
+    max-width: 29%;
+    height: auto;
+    background-color: rgb(89, 154, 244);
+    padding: 16px;
+    /* margin-top: 0px; */
+    
+}
+.cross-div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
+}
+.cross{
+   /* margin-right: 10px; */
+    font-size: 30px;
+}
+.self-div{
+    position: absolute;
+    top: 10px;
+    z-index: 80;
+    height: auto;
+    width: 100%;
+    background-color: rgba(214, 211, 207, 0.686);
+}
+/* @media (max-width:768px){
+    .nav{
+        width: 70%;
+        height: 50px;
+        font-size: 10px;
+    }
+    .input{
+        width: 55%;
+    }
+    .icon{
+        left: auto;
+        left: 13%;
+
+    }
+    .plus{
+        gap: 7px;
+        right: -2px;
+    }
+} */
+ /* @media screen and (max-width: 480px) {
+    .nav2 {
+      font-size: 0.7rem; 
+    }
+  
+    .input {
+      padding: 15px; 
+      font-size: 18px; 
+    }
+  
+    .icon,
+    .plus {
+      left: 25%; 
+      right: 25%;
+      font-size: 25px; 
+    }
+  
+    .user {
+      font-size: 40px; 
+    }
+  
+    .contact-icon {
+      font-size: 22px; 
+      padding-top: 15px; 
+    }
+  
+    .trash {
+      font-size: 30px; 
+    }
+  
+    .model {
+      max-width: 90%; 
+      padding: 10px; 
+    }
+  
+    .cross-div {
+      justify-content: flex-end;
+    }
+  
+    .cross {
+      font-size: 25px; 
+    }
+  }  */
+
+  @media screen and (max-width: 768px) {
+    .nav2 img{
+        background: none;
+    }
+    .app {
+      width: 70%; /* Make the width full for small screens */
+    }
+    .contact-app{
+        font-size: 18px;
+        padding: 10px;
+    }
+  .main{
+    width: 220px;
+    height: 70px;
+    margin-left: 28px;
+    padding: 0px;
+    /* padding: 10px; */
+  }
+  .user{
+    padding-top: 13px;
+  }
+  .contact-info{
+    /* padding-top: 0px; */
+    gap: 3px;
+  }
+    .nav2 {
+      width: 80%; /* Make the width full for small screens */
+    }
+  
+    .input {
+      width: 75%; /* Make the width full for small screens */
+    }
+  
+    .icon,
+    .plus {
+      left: 10%; /* Adjust the position of icons for small screens */
+      right: 25%;
+    }
+    .plus{
+        /* margin-left: 20px; */
+        transform: scale(2.15);
+
+    }
+    .model{
+        max-width: 55%;
+        /* margin-left: 17%; */
+        margin: auto;
+        margin-top: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .nav2 {
+      font-size: 0.7rem; /* Decrease font size for small screens */
+    }
+  .nav2 h1{
+    font-size: 18px;
+    /* background: none; */
+  }
+    .input {
+        margin-left: 10%;
+      padding: 10px; /* Decrease padding for small screens */
+      font-size: 18px; /* Decrease font size for small screens */
+      width: 100%; /* Make the width full for small screens */
+    }
+  
+    .icon,
+    .plus {
+      left: 12%; /* Adjust the position of icons for even smaller screens */
+      right: 25%;
+      font-size: 18px; /* Decrease font size for small screens */
+    }
+  
+    .user {
+      font-size: 40px; /* Decrease font size for small screens */
+    }
+  
+    .contact-icon {
+      font-size: 22px; /* Decrease font size for small screens */
+      padding-top: 15px; /* Decrease padding for small screens */
+    }
+  
+    .trash {
+      font-size: 30px; /* Decrease font size for small screens */
+    }
+  
+    .model {
+        margin-top: 10px;
+            max-width: 55%;
+            /* height: 200px; */
+            /* margin-left: 17%; */
+            /* margin: auto; */
+       
+      /* width: auto; Increase max width for small screens */
+      padding: 10px; /* Decrease padding for small screens */
+    }
+  
+    .cross-div {
+      justify-content: flex-end;
+    }
+  
+    .cross {
+      font-size: 25px; /* Decrease font size for small screens */
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .input {
+      width: 80%;
+      padding: 15px;
+      padding-left: 40px;
+    }
+  
+    .plus {
+      right: 15%;
+    }
+    
+        .input {
+          padding: 15px 30px 15px 40px; /* Adjust padding values for smaller screens */
+        }
+      
+        .icon {
+          font-size: 24px;
+        }
+  
+    /* Additional adjustments for smaller screens */
+  }

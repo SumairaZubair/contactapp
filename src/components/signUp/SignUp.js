@@ -53,24 +53,19 @@ const SignupForm = () => {
         updateProfile(user,{displayName:values.name})
         // import { doc, setDoc, collection } from "firebase/firestore";
 
-       async function saveUserData(db, user, values, response) {
-         const docRef =  await addDoc(doc(collection(db, 'users','123456')), {
-            email: values.email,
-            userId: response.user.uid
-          })
-          // debugger;
-          console.log(docRef,'doc')
-          // .then(() => {
-          //   console.log("Document successfully written!");
-          // })
-          // .catch((error) => {
-          //   console.error("Error writing document: ", error);
-          // });
-          // console.log(docRef,'docref')
-        }
+        const saveUserData = async (db, user, userData) => {
+          try {
+           
+            await setDoc(doc(db, "users", user.uid), userData);
+            console.log("User data saved successfully!");
+          } catch (error) {
+            console.error("Error saving user data: ", error);
+          }
+          // console.log(userData ,'data')
+        };
         
-        // Call the function
-        saveUserData(db, user, values, response);
+         // Call the function
+        saveUserData(db, user, values);
         setSubmitButton(false);
         // console.log(user,'usernmae');
         navigate("/"); 
