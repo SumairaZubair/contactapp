@@ -249,7 +249,7 @@ useEffect(() => {
     };
     getDataByQuery();
   }
-}, [[formValue]]);
+}, []);
 
 // Render loading state if data is still loading
 if (loading) {
@@ -293,7 +293,7 @@ if (loading) {
       <Model isOpen={isOpen} onClose={onClose}>
       <div className="contact-form-container">
       <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit} className="contact-form">
+      <form  className="contact-form">
         <label htmlFor="name">Name:</label>
         <input
           type="text"

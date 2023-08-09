@@ -114,10 +114,10 @@
     gap: 7px;
 }
 .main{
-    width: 285px;
+    width: 300px;
     height: 80px;
     margin-top: 8px;
-    margin-left: 13%;
+    margin-left: 8%;
     background-color: rgb(89, 154, 244);
   display: flex;
   justify-content: space-around;

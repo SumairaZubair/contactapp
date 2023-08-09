@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {HiOutlineUserCircle} from 'react-icons/hi'
 // import {RiEditCircleLine } from 'react-icons/ri'
 import {IoMdTrash} from 'react-icons/io'
@@ -6,16 +6,18 @@ import {IoMdTrash} from 'react-icons/io'
 import { doc, deleteDoc} from 'firebase/firestore'
 import { db } from '../Firebase'
 import '../components/Navbar.css'
-function Contact({contact }) {
+function Contact() {
+  const [contact, setContact] = useState([]);
+
   const deleteContact = async (id) => {
-    // console.log(id)
     try {
-      <p>load..</p>
       await deleteDoc(doc(db, 'contacts', id));
+      setContact(prevContacts => prevContacts.filter(contact => contact.id !== id));
     } catch (error) {
       console.log(error);
     }
   };
+  
    
    
 
